@@ -21,13 +21,13 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 
+    // Table View
     _tableView = [UITableView new];
     _tableView.delegate = self;
     _tableView.dataSource = self;
-
     self.view = self.tableView;
 
-    // TextField
+    // Text Field
     _textField = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, 123, 32)];
     _textField.clearButtonMode = UITextFieldViewModeWhileEditing;
     _textField.backgroundColor = [UIColor grayColor];
@@ -43,6 +43,7 @@
                                                                        attributes:textAttributes];
 
     _tableView.tableHeaderView = _textField;
+    _tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -71,6 +72,11 @@
 
 #pragma mark UITableViewDelegate
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+
+    [_textField resignFirstResponder];
+}
 
 #pragma mark UITextFieldDelegate
 
