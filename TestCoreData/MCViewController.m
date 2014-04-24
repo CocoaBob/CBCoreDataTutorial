@@ -8,6 +8,8 @@
 
 #import "MCViewController.h"
 
+#import "MCHistoryManager.h"
+
 @interface MCViewController () <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
@@ -83,6 +85,12 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     return YES;
+}
+
+#pragma mark Data Management
+
+- (void)reloadData {
+    self.histories = [[MCHistoryManager shared] allHistories];
 }
 
 @end
