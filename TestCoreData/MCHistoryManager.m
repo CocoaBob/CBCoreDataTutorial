@@ -7,6 +7,15 @@
 //
 
 #import "MCHistoryManager.h"
+#import <CoreData/CoreData.h>
+
+@interface MCHistoryManager ()
+
+@property (nonatomic, strong, readonly) NSManagedObjectModel *managedObjectModel;
+@property (nonatomic, strong, readonly) NSManagedObjectContext* managedObjectContext;
+@property (nonatomic, strong, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+
+@end
 
 @implementation MCHistoryManager
 
