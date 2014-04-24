@@ -108,6 +108,8 @@
 
 - (void)deleteHistory:(HistoryItem *)history {
     [self.managedObjectContext deleteObject:history];
+    
+    [self saveContext];
 }
 
 @end
