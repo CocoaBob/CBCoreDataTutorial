@@ -9,6 +9,8 @@
 #import "MCHistoryManager.h"
 #import <CoreData/CoreData.h>
 
+#import "HistoryItem.h"
+
 @interface MCHistoryManager ()
 
 @property (nonatomic, strong, readonly) NSManagedObjectModel *managedObjectModel;
@@ -23,7 +25,7 @@
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
-#pragma mark Core Data
+#pragma mark Core Data Basics
 
 - (NSManagedObjectModel *)managedObjectModel {
     if (!_managedObjectModel) {
@@ -55,6 +57,45 @@
         }
     }
     return _persistentStoreCoordinator;
+}
+
+- (void)saveContext {
+    NSManagedObjectContext *managedObjectContext = self.managedObjectContext;
+    if ([managedObjectContext hasChanges]) {
+        NSError *error = nil;
+        if (![managedObjectContext save:&error]) {
+            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+        }
+    }
+}
+
+#pragma mark Database Managements
+
+- (NSArray *)allHistories {
+//    NSEntityDescription *entity = [NSEntityDescription entityForName:@"HistoryEntity"
+//                                              inManagedObjectContext:self.managedObjectContext];
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"HistoryEntity"];
+    NSError *error = nil;
+    NSArray *fetchResults = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    if (error) {
+        NSLog(@"%s %@",__PRETTY_FUNCTION__, error);
+    }
+    return fetchResults;
+}
+
+- (void)addNewHistoryWithDate:(NSDate *)date content:(NSString *)content {
+    NSManagedObjectContext *managedObjectContext = self.managedObjectContext;
+
+    HistoryItem *newHistoryItem = [NSEntityDescription insertNewObjectForEntityForName:@"HistoryEntity"
+                                                                inManagedObjectContext:managedObjectContext];
+    newHistoryItem.date = date;
+    newHistoryItem.content = content;
+
+    [self saveContext];
+}
+
+- (void)deleteHistory:(HistoryItem *)history {
+    [self.managedObjectContext deleteObject:history];
 }
 
 @end
