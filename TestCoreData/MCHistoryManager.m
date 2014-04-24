@@ -25,6 +25,19 @@
 @synthesize managedObjectModel = _managedObjectModel;
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
+#pragma mark - Object Lifecycle
+
++ (instancetype)shared {
+    static id __sharedInstance = nil;
+    if (__sharedInstance == nil) {
+        static dispatch_once_t onceToken;
+        dispatch_once(&onceToken, ^{
+            __sharedInstance = [[[self class] alloc] init];
+        });
+    }
+    return __sharedInstance;
+}
+
 #pragma mark Core Data Basics
 
 - (NSManagedObjectModel *)managedObjectModel {

@@ -10,6 +10,8 @@
 
 @interface MCHistoryManager : NSObject
 
++ (instancetype)shared;
+
 - (void)saveContext;
 
 - (NSArray *)allHistories;
