@@ -61,7 +61,8 @@
 
 - (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
     if (!_persistentStoreCoordinator) {
-        NSURL *storeURL = [NSURL URLWithString:[NSHomeDirectory() stringByAppendingPathComponent:@"db.sqlite"]];
+        NSURL *documentURL = [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+        NSURL *storeURL = [documentURL URLByAppendingPathComponent:@"db.sqlite"];
 
         NSError *error = nil;
         _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
@@ -85,9 +86,7 @@
 #pragma mark Database Managements
 
 - (NSArray *)allHistories {
-//    NSEntityDescription *entity = [NSEntityDescription entityForName:@"HistoryEntity"
-//                                              inManagedObjectContext:self.managedObjectContext];
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"HistoryEntity"];
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"HistoryItem"];
     NSError *error = nil;
     NSArray *fetchResults = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
     if (error) {
@@ -99,7 +98,7 @@
 - (void)addNewHistoryWithDate:(NSDate *)date content:(NSString *)content {
     NSManagedObjectContext *managedObjectContext = self.managedObjectContext;
 
-    HistoryItem *newHistoryItem = [NSEntityDescription insertNewObjectForEntityForName:@"HistoryEntity"
+    HistoryItem *newHistoryItem = [NSEntityDescription insertNewObjectForEntityForName:@"HistoryItem"
                                                                 inManagedObjectContext:managedObjectContext];
     newHistoryItem.date = date;
     newHistoryItem.content = content;
