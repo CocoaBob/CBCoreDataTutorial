@@ -23,6 +23,7 @@
 		4514117D1909020F00B133A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4514117B1909020F00B133A9 /* InfoPlist.strings */; };
 		4514117F1909020F00B133A9 /* TestCoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514117E1909020F00B133A9 /* TestCoreDataTests.m */; };
 		4514118F19091DA400B133A9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4514118E19091DA400B133A9 /* CoreData.framework */; };
+		4514119219091DE400B133A9 /* MCHistoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514119019091DE400B133A9 /* MCHistoryManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		4514117C1909020F00B133A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4514117E1909020F00B133A9 /* TestCoreDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCoreDataTests.m; sourceTree = "<group>"; };
 		4514118E19091DA400B133A9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		4514119019091DE400B133A9 /* MCHistoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCHistoryManager.m; sourceTree = "<group>"; };
+		4514119119091DE400B133A9 /* MCHistoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCHistoryManager.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,10 +123,12 @@
 			children = (
 				4514115F1909020F00B133A9 /* MCAppDelegate.h */,
 				451411601909020F00B133A9 /* MCAppDelegate.m */,
-				451411621909020F00B133A9 /* Main_iPhone.storyboard */,
-				451411651909020F00B133A9 /* Main_iPad.storyboard */,
+				4514119119091DE400B133A9 /* MCHistoryManager.h */,
+				4514119019091DE400B133A9 /* MCHistoryManager.m */,
 				451411681909020F00B133A9 /* MCViewController.h */,
 				451411691909020F00B133A9 /* MCViewController.m */,
+				451411621909020F00B133A9 /* Main_iPhone.storyboard */,
+				451411651909020F00B133A9 /* Main_iPad.storyboard */,
 				4514116B1909020F00B133A9 /* Images.xcassets */,
 				451411571909020F00B133A9 /* Supporting Files */,
 			);
@@ -260,6 +265,7 @@
 			files = (
 				451411611909020F00B133A9 /* MCAppDelegate.m in Sources */,
 				4514116A1909020F00B133A9 /* MCViewController.m in Sources */,
+				4514119219091DE400B133A9 /* MCHistoryManager.m in Sources */,
 				4514115D1909020F00B133A9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
