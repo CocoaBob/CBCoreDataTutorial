@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UITextField *textField;
+@property (nonatomic, strong) NSArray *histories;
 
 @end
 
