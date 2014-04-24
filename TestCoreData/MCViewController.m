@@ -48,6 +48,8 @@
 
     _tableView.tableHeaderView = _textField;
     _tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
+
+    [self reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -89,6 +91,10 @@
 #pragma mark UITextFieldDelegate
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [[MCHistoryManager shared] addNewHistoryWithDate:[NSDate date]
+                                             content:_textField.text];
+    [self reloadData];
+    [_textField resignFirstResponder];
     return YES;
 }
 
@@ -96,6 +102,7 @@
 
 - (void)reloadData {
     self.histories = [[MCHistoryManager shared] allHistories];
+    [_tableView reloadData];
 }
 
 @end
