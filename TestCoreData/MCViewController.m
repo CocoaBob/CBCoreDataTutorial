@@ -8,9 +8,10 @@
 
 #import "MCViewController.h"
 
-@interface MCViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface MCViewController () <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
 
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) UITextField *textField;
 
 @end
 
@@ -20,11 +21,28 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 
-    self.tableView = [UITableView new];
-    self.tableView.delegate = self;
-    self.tableView.dataSource = self;
+    _tableView = [UITableView new];
+    _tableView.delegate = self;
+    _tableView.dataSource = self;
 
     self.view = self.tableView;
+
+    // TextField
+    _textField = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, 123, 32)];
+    _textField.clearButtonMode = UITextFieldViewModeWhileEditing;
+    _textField.backgroundColor = [UIColor grayColor];
+    _textField.delegate = self;
+
+    NSMutableParagraphStyle *paraphStyle = [NSMutableParagraphStyle new];
+    paraphStyle.alignment = NSTextAlignmentCenter;
+    NSDictionary *textAttributes = @{NSParagraphStyleAttributeName:paraphStyle,
+                                     NSForegroundColorAttributeName:[UIColor whiteColor]};
+
+    _textField.defaultTextAttributes = textAttributes;
+    _textField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:NSLocalizedString(@"Type here...", nil)
+                                                                       attributes:textAttributes];
+
+    _tableView.tableHeaderView = _textField;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -54,5 +72,10 @@
 #pragma mark UITableViewDelegate
 
 
+#pragma mark UITextFieldDelegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    return YES;
+}
 
 @end
