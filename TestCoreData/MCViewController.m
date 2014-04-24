@@ -9,6 +9,7 @@
 #import "MCViewController.h"
 
 #import "MCHistoryManager.h"
+#import "HistoryItem.h"
 
 @interface MCViewController () <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>
 
@@ -57,7 +58,7 @@
 #pragma mark UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 2;
+    return [self.histories count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -68,7 +69,11 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
     }
 
-    cell.textLabel.text = [NSString stringWithFormat:@"Demo %d",indexPath.row];
+    HistoryItem *historyItem = self.histories[indexPath.row];
+    cell.textLabel.text = historyItem.content;
+    cell.detailTextLabel.text = [NSDateFormatter localizedStringFromDate:historyItem.date
+                                                               dateStyle:NSDateFormatterShortStyle
+                                                               timeStyle:NSDateFormatterShortStyle];
 
     return cell;
 }
