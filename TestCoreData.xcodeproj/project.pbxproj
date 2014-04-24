@@ -25,6 +25,7 @@
 		4514118F19091DA400B133A9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4514118E19091DA400B133A9 /* CoreData.framework */; };
 		4514119219091DE400B133A9 /* MCHistoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514119019091DE400B133A9 /* MCHistoryManager.m */; };
 		451411951909242B00B133A9 /* HistoryModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 451411931909242B00B133A9 /* HistoryModel.xcdatamodeld */; };
+		45141198190927F800B133A9 /* HistoryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 45141197190927F800B133A9 /* HistoryItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,8 @@
 		4514119019091DE400B133A9 /* MCHistoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCHistoryManager.m; sourceTree = "<group>"; };
 		4514119119091DE400B133A9 /* MCHistoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCHistoryManager.h; sourceTree = "<group>"; };
 		451411941909242B00B133A9 /* HistoryModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HistoryModel.xcdatamodel; sourceTree = "<group>"; };
+		45141196190927F800B133A9 /* HistoryItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryItem.h; sourceTree = "<group>"; };
+		45141197190927F800B133A9 /* HistoryItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,8 @@
 				451411621909020F00B133A9 /* Main_iPhone.storyboard */,
 				451411651909020F00B133A9 /* Main_iPad.storyboard */,
 				451411931909242B00B133A9 /* HistoryModel.xcdatamodeld */,
+				45141196190927F800B133A9 /* HistoryItem.h */,
+				45141197190927F800B133A9 /* HistoryItem.m */,
 				4514116B1909020F00B133A9 /* Images.xcassets */,
 				451411571909020F00B133A9 /* Supporting Files */,
 			);
@@ -269,6 +274,7 @@
 				451411611909020F00B133A9 /* MCAppDelegate.m in Sources */,
 				4514116A1909020F00B133A9 /* MCViewController.m in Sources */,
 				451411951909242B00B133A9 /* HistoryModel.xcdatamodeld in Sources */,
+				45141198190927F800B133A9 /* HistoryItem.m in Sources */,
 				4514119219091DE400B133A9 /* MCHistoryManager.m in Sources */,
 				4514115D1909020F00B133A9 /* main.m in Sources */,
 			);
