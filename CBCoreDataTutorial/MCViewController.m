@@ -39,12 +39,14 @@
 
     NSMutableParagraphStyle *paraphStyle = [NSMutableParagraphStyle new];
     paraphStyle.alignment = NSTextAlignmentCenter;
-    NSDictionary *textAttributes = @{NSParagraphStyleAttributeName:paraphStyle,
-                                     NSForegroundColorAttributeName:[UIColor whiteColor]};
+    NSDictionary *defaultAttributes = @{NSParagraphStyleAttributeName:paraphStyle,
+                                        NSForegroundColorAttributeName:[UIColor whiteColor]};
+    NSDictionary *placeHolderAttributes = @{NSParagraphStyleAttributeName:paraphStyle,
+                                            NSForegroundColorAttributeName:[UIColor colorWithWhite:0.8 alpha:1]};
 
-    _textField.defaultTextAttributes = textAttributes;
+    _textField.defaultTextAttributes = defaultAttributes;
     _textField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:NSLocalizedString(@"Type here...", nil)
-                                                                       attributes:textAttributes];
+                                                                       attributes:placeHolderAttributes];
 
     _tableView.tableHeaderView = _textField;
     _tableView.keyboardDismissMode = UIScrollViewKeyboardDismissModeOnDrag;
@@ -98,9 +100,12 @@
 #pragma mark UITextFieldDelegate
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    [[MCHistoryManager shared] addNewHistoryWithDate:[NSDate date]
-                                             content:_textField.text];
-    [self reloadData];
+    if (_textField.text && ![@"" isEqualToString:_textField.text]) {
+        [[MCHistoryManager shared] addNewHistoryWithDate:[NSDate date]
+                                                 content:_textField.text];
+        [self reloadData];
+    }
+    _textField.text = nil;
     [_textField resignFirstResponder];
     return YES;
 }

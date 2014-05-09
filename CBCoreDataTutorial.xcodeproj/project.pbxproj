@@ -17,36 +17,21 @@
 		451411671909020F00B133A9 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 451411651909020F00B133A9 /* Main_iPad.storyboard */; };
 		4514116A1909020F00B133A9 /* MCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 451411691909020F00B133A9 /* MCViewController.m */; };
 		4514116C1909020F00B133A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4514116B1909020F00B133A9 /* Images.xcassets */; };
-		451411731909020F00B133A9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 451411721909020F00B133A9 /* XCTest.framework */; };
-		451411741909020F00B133A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 451411501909020F00B133A9 /* Foundation.framework */; };
-		451411751909020F00B133A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 451411541909020F00B133A9 /* UIKit.framework */; };
-		4514117D1909020F00B133A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4514117B1909020F00B133A9 /* InfoPlist.strings */; };
-		4514117F1909020F00B133A9 /* TestCoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514117E1909020F00B133A9 /* TestCoreDataTests.m */; };
 		4514118F19091DA400B133A9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4514118E19091DA400B133A9 /* CoreData.framework */; };
 		4514119219091DE400B133A9 /* MCHistoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4514119019091DE400B133A9 /* MCHistoryManager.m */; };
 		451411951909242B00B133A9 /* HistoryModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 451411931909242B00B133A9 /* HistoryModel.xcdatamodeld */; };
 		45141198190927F800B133A9 /* HistoryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 45141197190927F800B133A9 /* HistoryItem.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		451411761909020F00B133A9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 451411451909020F00B133A9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4514114C1909020F00B133A9;
-			remoteInfo = TestCoreData;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		4514114D1909020F00B133A9 /* TestCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4514114D1909020F00B133A9 /* CBCoreDataTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CBCoreDataTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		451411501909020F00B133A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		451411521909020F00B133A9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		451411541909020F00B133A9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		451411581909020F00B133A9 /* TestCoreData-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestCoreData-Info.plist"; sourceTree = "<group>"; };
+		451411581909020F00B133A9 /* CBCoreDataTutorial-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CBCoreDataTutorial-Info.plist"; sourceTree = "<group>"; };
 		4514115A1909020F00B133A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4514115C1909020F00B133A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4514115E1909020F00B133A9 /* TestCoreData-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestCoreData-Prefix.pch"; sourceTree = "<group>"; };
+		4514115E1909020F00B133A9 /* CBCoreDataTutorial-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CBCoreDataTutorial-Prefix.pch"; sourceTree = "<group>"; };
 		4514115F1909020F00B133A9 /* MCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCAppDelegate.h; sourceTree = "<group>"; };
 		451411601909020F00B133A9 /* MCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCAppDelegate.m; sourceTree = "<group>"; };
 		451411631909020F00B133A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
@@ -54,11 +39,7 @@
 		451411681909020F00B133A9 /* MCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCViewController.h; sourceTree = "<group>"; };
 		451411691909020F00B133A9 /* MCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCViewController.m; sourceTree = "<group>"; };
 		4514116B1909020F00B133A9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		451411711909020F00B133A9 /* TestCoreDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCoreDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		451411721909020F00B133A9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		4514117A1909020F00B133A9 /* TestCoreDataTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestCoreDataTests-Info.plist"; sourceTree = "<group>"; };
-		4514117C1909020F00B133A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4514117E1909020F00B133A9 /* TestCoreDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCoreDataTests.m; sourceTree = "<group>"; };
 		4514118E19091DA400B133A9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		4514119019091DE400B133A9 /* MCHistoryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCHistoryManager.m; sourceTree = "<group>"; };
 		4514119119091DE400B133A9 /* MCHistoryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCHistoryManager.h; sourceTree = "<group>"; };
@@ -79,24 +60,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4514116E1909020F00B133A9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				451411731909020F00B133A9 /* XCTest.framework in Frameworks */,
-				451411751909020F00B133A9 /* UIKit.framework in Frameworks */,
-				451411741909020F00B133A9 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		451411441909020F00B133A9 = {
 			isa = PBXGroup;
 			children = (
-				451411561909020F00B133A9 /* TestCoreData */,
-				451411781909020F00B133A9 /* TestCoreDataTests */,
+				451411561909020F00B133A9 /* CBCoreDataTutorial */,
 				4514114F1909020F00B133A9 /* Frameworks */,
 				4514114E1909020F00B133A9 /* Products */,
 			);
@@ -105,8 +75,7 @@
 		4514114E1909020F00B133A9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4514114D1909020F00B133A9 /* TestCoreData.app */,
-				451411711909020F00B133A9 /* TestCoreDataTests.xctest */,
+				4514114D1909020F00B133A9 /* CBCoreDataTutorial.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,7 +92,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		451411561909020F00B133A9 /* TestCoreData */ = {
+		451411561909020F00B133A9 /* CBCoreDataTutorial */ = {
 			isa = PBXGroup;
 			children = (
 				4514115F1909020F00B133A9 /* MCAppDelegate.h */,
@@ -140,34 +109,16 @@
 				4514116B1909020F00B133A9 /* Images.xcassets */,
 				451411571909020F00B133A9 /* Supporting Files */,
 			);
-			path = TestCoreData;
+			path = CBCoreDataTutorial;
 			sourceTree = "<group>";
 		};
 		451411571909020F00B133A9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				451411581909020F00B133A9 /* TestCoreData-Info.plist */,
+				451411581909020F00B133A9 /* CBCoreDataTutorial-Info.plist */,
 				451411591909020F00B133A9 /* InfoPlist.strings */,
 				4514115C1909020F00B133A9 /* main.m */,
-				4514115E1909020F00B133A9 /* TestCoreData-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		451411781909020F00B133A9 /* TestCoreDataTests */ = {
-			isa = PBXGroup;
-			children = (
-				4514117E1909020F00B133A9 /* TestCoreDataTests.m */,
-				451411791909020F00B133A9 /* Supporting Files */,
-			);
-			path = TestCoreDataTests;
-			sourceTree = "<group>";
-		};
-		451411791909020F00B133A9 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				4514117A1909020F00B133A9 /* TestCoreDataTests-Info.plist */,
-				4514117B1909020F00B133A9 /* InfoPlist.strings */,
+				4514115E1909020F00B133A9 /* CBCoreDataTutorial-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -175,9 +126,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4514114C1909020F00B133A9 /* TestCoreData */ = {
+		4514114C1909020F00B133A9 /* CBCoreDataTutorial */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 451411821909020F00B133A9 /* Build configuration list for PBXNativeTarget "TestCoreData" */;
+			buildConfigurationList = 451411821909020F00B133A9 /* Build configuration list for PBXNativeTarget "CBCoreDataTutorial" */;
 			buildPhases = (
 				451411491909020F00B133A9 /* Sources */,
 				4514114A1909020F00B133A9 /* Frameworks */,
@@ -187,28 +138,10 @@
 			);
 			dependencies = (
 			);
-			name = TestCoreData;
-			productName = TestCoreData;
-			productReference = 4514114D1909020F00B133A9 /* TestCoreData.app */;
+			name = CBCoreDataTutorial;
+			productName = CBCoreDataTutorial;
+			productReference = 4514114D1909020F00B133A9 /* CBCoreDataTutorial.app */;
 			productType = "com.apple.product-type.application";
-		};
-		451411701909020F00B133A9 /* TestCoreDataTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 451411851909020F00B133A9 /* Build configuration list for PBXNativeTarget "TestCoreDataTests" */;
-			buildPhases = (
-				4514116D1909020F00B133A9 /* Sources */,
-				4514116E1909020F00B133A9 /* Frameworks */,
-				4514116F1909020F00B133A9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				451411771909020F00B133A9 /* PBXTargetDependency */,
-			);
-			name = TestCoreDataTests;
-			productName = TestCoreDataTests;
-			productReference = 451411711909020F00B133A9 /* TestCoreDataTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -219,13 +152,8 @@
 				CLASSPREFIX = MC;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = CocoaBob;
-				TargetAttributes = {
-					451411701909020F00B133A9 = {
-						TestTargetID = 4514114C1909020F00B133A9;
-					};
-				};
 			};
-			buildConfigurationList = 451411481909020F00B133A9 /* Build configuration list for PBXProject "TestCoreData" */;
+			buildConfigurationList = 451411481909020F00B133A9 /* Build configuration list for PBXProject "CBCoreDataTutorial" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -238,8 +166,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4514114C1909020F00B133A9 /* TestCoreData */,
-				451411701909020F00B133A9 /* TestCoreDataTests */,
+				4514114C1909020F00B133A9 /* CBCoreDataTutorial */,
 			);
 		};
 /* End PBXProject section */
@@ -253,14 +180,6 @@
 				4514116C1909020F00B133A9 /* Images.xcassets in Resources */,
 				451411641909020F00B133A9 /* Main_iPhone.storyboard in Resources */,
 				4514115B1909020F00B133A9 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4514116F1909020F00B133A9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4514117D1909020F00B133A9 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,23 +199,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4514116D1909020F00B133A9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4514117F1909020F00B133A9 /* TestCoreDataTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		451411771909020F00B133A9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4514114C1909020F00B133A9 /* TestCoreData */;
-			targetProxy = 451411761909020F00B133A9 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		451411591909020F00B133A9 /* InfoPlist.strings */ = {
@@ -321,14 +224,6 @@
 				451411661909020F00B133A9 /* Base */,
 			);
 			name = Main_iPad.storyboard;
-			sourceTree = "<group>";
-		};
-		4514117B1909020F00B133A9 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4514117C1909020F00B133A9 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -412,9 +307,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TestCoreData/TestCoreData-Prefix.pch";
-				INFOPLIST_FILE = "TestCoreData/TestCoreData-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "CBCoreDataTutorial/CBCoreDataTutorial-Prefix.pch";
+				INFOPLIST_FILE = "CBCoreDataTutorial/CBCoreDataTutorial-Info.plist";
+				PRODUCT_NAME = CBCoreDataTutorial;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -425,57 +320,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TestCoreData/TestCoreData-Prefix.pch";
-				INFOPLIST_FILE = "TestCoreData/TestCoreData-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "CBCoreDataTutorial/CBCoreDataTutorial-Prefix.pch";
+				INFOPLIST_FILE = "CBCoreDataTutorial/CBCoreDataTutorial-Info.plist";
+				PRODUCT_NAME = CBCoreDataTutorial;
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		451411861909020F00B133A9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestCoreData.app/TestCoreData";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TestCoreData/TestCoreData-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "TestCoreDataTests/TestCoreDataTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		451411871909020F00B133A9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestCoreData.app/TestCoreData";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "TestCoreData/TestCoreData-Prefix.pch";
-				INFOPLIST_FILE = "TestCoreDataTests/TestCoreDataTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		451411481909020F00B133A9 /* Build configuration list for PBXProject "TestCoreData" */ = {
+		451411481909020F00B133A9 /* Build configuration list for PBXProject "CBCoreDataTutorial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				451411801909020F00B133A9 /* Debug */,
@@ -484,20 +339,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		451411821909020F00B133A9 /* Build configuration list for PBXNativeTarget "TestCoreData" */ = {
+		451411821909020F00B133A9 /* Build configuration list for PBXNativeTarget "CBCoreDataTutorial" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				451411831909020F00B133A9 /* Debug */,
 				451411841909020F00B133A9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		451411851909020F00B133A9 /* Build configuration list for PBXNativeTarget "TestCoreDataTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				451411861909020F00B133A9 /* Debug */,
-				451411871909020F00B133A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
